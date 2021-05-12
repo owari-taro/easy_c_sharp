@@ -26,4 +26,55 @@ class Sample4{
   Application.Run(fm);
   
   }
-a
+  
+  
+ class Car{
+  private Image img:
+  protected int top;
+   protected int left;
+   
+   pubic Car(){
+      img=Image.FromFile("c:\\car.bmp");
+      top=0;
+     left=0;
+   }
+ 
+    virtual public void Move(){
+      top=top+10;
+      left=left+10;
+    }
+    
+   public void SetImage(Image i){
+      img=i; 
+   }
+ 
+  public Image GetImage(){
+    return img;
+  }
+ 
+ public int Top{
+  set{top =value:}
+   get{return top:}
+  }
+   public int Left{
+      set{left =value;}
+      get{return left:}
+  }
+}
+  
+  
+ class RacingCar:car{
+  override public void Move(){
+    top=top+100;
+    left=left+100;
+  
+  
+  }
+ }
+\   
+   
+   
+   
+   
+   
+   
